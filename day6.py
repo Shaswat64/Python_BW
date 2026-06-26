@@ -76,3 +76,7 @@ i = 1
 while(i<=10):
     print(f'{i}')
     i = i+1
+# import random   #need to import random to use random
+# print(random.random())       #decimal value
+# c = [1,2,3,4,5,6,7]
+# print(random.choice(c))      #    #gives a random number from the set
