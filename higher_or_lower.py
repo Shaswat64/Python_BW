@@ -1,7 +1,7 @@
 import random
 number = random.randint(1, 100)
-start_new_game = "y"
-while  start_new_game == "y":
+start_new_game = True
+while  start_new_game == True:
     guess_counter = 0
     life = 10
     print("You have", life ,"lives")
@@ -27,4 +27,6 @@ while  start_new_game == "y":
     else:
         print(f"You loose the number was {number}")
     start_new_game = input("Would you like to start a new game (y/n) ").lower()
+    if not start_new_game == "y":
+        start_new_game = False
 
