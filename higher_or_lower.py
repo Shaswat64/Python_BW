@@ -1,13 +1,14 @@
 import random
+
 number = random.randint(1, 100)
-start_new_game = "y"
-while  start_new_game == "y":
+start_new_game = True
+while start_new_game == True:
     guess_counter = 0
     life = 10
-    print("You have", life ,"lives")
+    print("You have", life, "lives")
     guessed_number = int(input(f"Guess a number between 1 to 100 "))
-    if (guessed_number < 1 or guessed_number > 100):
-        print(f'Number out of range try again')
+    if guessed_number < 1 or guessed_number > 100:
+        print(f"Number out of range try again")
         continue
     while guessed_number != number and life > 0:
 
@@ -27,4 +28,5 @@ while  start_new_game == "y":
     else:
         print(f"You loose the number was {number}")
     start_new_game = input("Would you like to start a new game (y/n) ").lower()
-
+    if not start_new_game == "y":
+        start_new_game = False

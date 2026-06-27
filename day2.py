@@ -1,28 +1,23 @@
-#Type Check
-a = 10 #int
-a = 1.2 #float
-a = True #boolean
-a = "s" #string
-a = None #Nonetype 
+# Type Check
+a = 10  # int
+a = 1.2  # float
+a = True  # boolean
+a = "s"  # string
+a = None  # Nonetype
 print(type(a))
-a = "" #String
-a = None  #Nonetype
+a = ""  # String
+a = None  # Nonetype
 
 
-
-
-#Type Casting 
-a="10"
+# Type Casting
+a = "10"
 print("Before type casting", type(a))
 a = 10
 print("After type casting", type(a))
 
 
-
-
-#Type Validation
-print(isinstance(a, int)) #Gives boolean value true or false
-
+# Type Validation
+print(isinstance(a, int))  # Gives boolean value true or false
 
 
 # ** used for power
@@ -30,32 +25,21 @@ print(isinstance(a, int)) #Gives boolean value true or false
 # / used for divison result in float
 
 a = 10
-b = 3 
-print(
-
-    a+b,
-    a**b,
-    a*b,
-    a/b, a//b, 
-    a-b
-)
+b = 3
+print(a + b, a**b, a * b, a / b, a // b, a - b)
 
 
-
-
-
-#string can only use two arthimetic operation + and * 
+# string can only use two arthimetic operation + and *
 # + joins two string together (concationation)
 # * multiplies string with integer for eg "Hello" * 3 gives Hello Hello Hello
 
 a = "broadway "
 b = 3
 
-print(a*b, a+a)
+print(a * b, a + a)
 
 
-
-#Comparison operators give result in boolean form
+# Comparison operators give result in boolean form
 # ==	Equal to	5 == 5	True
 # !=	Not equal to	5 != 3	True
 # >	Greater than	7 > 3	True
@@ -64,15 +48,11 @@ print(a*b, a+a)
 # <=	Less than or equal to	4 <= 6	True
 
 
-
-
-
-#Logical operataors
+# Logical operataors
 
 is_weekend = False
 is_holiday = True
 print(is_weekend or is_holiday)  # True
-
 
 
 # Logical operators in Python are used to combine conditions and return a boolean result (True or False).
@@ -96,11 +76,8 @@ print(is_weekend or is_holiday)  # True
 # print(not logged_in)  # True
 
 
-
-
-
-#if condition
-if (1 == 2):
+# if condition
+if 1 == 2:
     print("1 is equal ")
 else:
     print("1 is not equal")
