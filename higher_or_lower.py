@@ -1,12 +1,13 @@
 import random
-
+guessed_number = None
 number = random.randint(1, 100)
 start_new_game = True
 while start_new_game == True:
     guess_counter = 0
     life = 10
     print("You have", life, "lives")
-    guessed_number = int(input(f"Guess a number between 1 to 100 "))
+    while guessed_number not in range(1,100):
+        guessed_number = int(input(f'Enter a number between (1-100): '))
     if guessed_number < 1 or guessed_number > 100:
         print(f"Number out of range try again")
         continue
