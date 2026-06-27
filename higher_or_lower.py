@@ -1,8 +1,8 @@
 import random
-guessed_number = None
-number = random.randint(1, 100)
 start_new_game = True
-while start_new_game == True:
+while start_new_game :
+    guessed_number = None
+    number = random.randint(1, 100)
     guess_counter = 0
     life = 10
     print("You have", life, "lives")
