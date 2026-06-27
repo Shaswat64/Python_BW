@@ -1,20 +1,15 @@
-#dictonary
-a = {
-    "name" : "ram",
-    "age" : 22,
-    "address" : "Nepal"
-
-}
+# dictonary
+a = {"name": "ram", "age": 22, "address": "Nepal"}
 print(a)
 print(len(a))
 print(type(a))
 print(a["name"])
 
-#changing the dictonary
-a['address']="KTM" 
-a['phone']=980
+# changing the dictonary
+a["address"] = "KTM"
+a["phone"] = 980
 
-#data = {
+# data = {
 # "name":"Sudan",
 # "role":"Devloper"
 # }
@@ -36,24 +31,21 @@ fifa_world_cup_2026 = {
     "qualification_format": {
         "automatic_qualifiers": "Top 2 teams from each group",
         "additional_qualifiers": "8 best third-placed teams",
-        "total_knockout_teams": 32
-    }
+        "total_knockout_teams": 32,
+    },
 }
 
 
-fifa = fifa_world_cup_2026['qualification_format']['automatic_qualifiers']
+fifa = fifa_world_cup_2026["qualification_format"]["automatic_qualifiers"]
 print(fifa)
 
 data = {
     "name": "Sudan",
-    "phone": [
-        {"type": "NTC", "number": 9844},
-        {"type": "Ncell", "number": 9806}
-    ],
+    "phone": [{"type": "NTC", "number": 9844}, {"type": "Ncell", "number": 9806}],
 }
 
-#print(data["name"],data["phone"][1]["type"], "number is", data["phone"][1]["number"])
+# print(data["name"],data["phone"][1]["type"], "number is", data["phone"][1]["number"])
 
-print(f'{data["name"]} {data["phone"][1]["type"]} number is {data["phone"][1]["number"]} ')
-
-
+print(
+    f'{data["name"]} {data["phone"][1]["type"]} number is {data["phone"][1]["number"]} '
+)
