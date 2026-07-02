@@ -27,5 +27,8 @@ class Book():
     def borrow(self):
         if(self.available_copies<=0):
             print(f'There are no available copies')
-        
+        else:
+            self.available_copies = self.available_copies - 1
+            print(f'Borrowed')
+       
 
