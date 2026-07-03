@@ -13,18 +13,23 @@
 # displays all employee details.
 
 
-class Employee:
-    employee_id = 3456723
-    name = "Madueke"
-    basic_salary = 1200
+class Employee():
+    def __init__(self,ID,Name,Salary):
+        self.employee_id = ID
+        self.name = Name
+        self.basic_salary = Salary
 
 
 class PermanentEmployee(Employee):
-    bonus = 20
-    tax_percentage = 40
+
+    def __init__(self,ID,Name,Salary, Bonus, Tax):
+        self.bonus = Bonus
+        self.tax_percentage = Tax
+        super().__init__(ID,Name,Salary)
+        
 
     def gross_salary(self):
-        self.bonus_salary = self.bonus + super().basic_salary
+        self.bonus_salary = self.bonus + self.basic_salary
         return self.bonus_salary
 
     def tax_amount(self):
@@ -40,8 +45,8 @@ class PermanentEmployee(Employee):
         self.tax_amount()
         self.net_salary()
         return f"""
-            Employee ID: {super().employee_id}    
-            Name: {super().name}  
+            Employee ID: {self.employee_id}    
+            Name: {self.name}  
             Basic Salary: {self.basic_salary}  
             Bonus earned: {self.bonus}     
             Tax percentage: {self.tax_percentage}       
@@ -50,5 +55,5 @@ class PermanentEmployee(Employee):
             """
 
 
-obj = PermanentEmployee()
+obj = PermanentEmployee(12353,"Kane",1209876,123098,40)
 print(obj.employee_detail())
