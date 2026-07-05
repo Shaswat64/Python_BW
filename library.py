@@ -35,20 +35,20 @@ from datetime import datetime
 
 
 class Book:
-    def __init__(self, title_, author_, ISBNum, price_):
-        self.title = title_
-        self.author = author_
+    def __init__(self, title, author, ISBNum, price):
+        self.title = title
+        self.author = author
         self.ISBN = ISBNum
-        self.price = price_
+        self.price = price
 
 
 class BorrowedBook(Book):
     def __init__(
         self,
-        title_,
-        author_,
+        title,
+        author,
         ISBNum,
-        price_,
+        price,
         borrowedBy,
         borrowedOn,
         dueDate,
@@ -58,16 +58,16 @@ class BorrowedBook(Book):
         self.borrow_date = borrowedOn
         self.due_date = dueDate
         self.allowed_days = allowedDays
-        super().__init__(title_, author_, ISBNum, price_)
+        super().__init__(title, author, ISBNum, price)
 
 
 class LateBorrowedBook(BorrowedBook):
     def __init__(
         self,
-        title_,
-        author_,
+        title,
+        author,
         ISBNum,
-        price_,
+        price,
         borrowedBy,
         borrowedOn,
         dueDate,
@@ -83,10 +83,10 @@ class LateBorrowedBook(BorrowedBook):
         self.total_fine = 0
         self.total_amount = 0
         super().__init__(
-            title_,
-            author_,
+            title,
+            author,
             ISBNum,
-            price_,
+            price,
             borrowedBy,
             borrowedOn,
             dueDate,
@@ -117,16 +117,13 @@ class LateBorrowedBook(BorrowedBook):
         return f"""
 
              ______BOOK INFORMATION______
-
                 Title : {self.title}
                 Author: {self.author}
                 ISBN  : {self.ISBN}
                 PRICE : {self.price}
 
-
-
-             ____BORROWER INFORMATION_____
-
+                
+              ____BORROWER INFORMATION_____
                 Borrower name: {self.borrower_name}
                 Borrowed date: {self.borrow_date}
                 Late Days    : {self.fine_days}
@@ -142,7 +139,7 @@ obj = LateBorrowedBook(
     "Muna Madan",
     "Laxmi Prasad Devkota",
     1234,
-    425,
+    670,
     "Mahedra Sapkota",
     "2026-06-03",
     "2026-06-20",
