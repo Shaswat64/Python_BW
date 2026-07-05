@@ -27,13 +27,3 @@ print(obj.add())
 
 
 
-# class A():
-#     a = 1
-
-# class B(A):
-#     b = 67
-
-# class C(B):
-#     c = 80
-
-# print(C.__mro__)        #shows how the class is ordered ( From C to B, B to A)
