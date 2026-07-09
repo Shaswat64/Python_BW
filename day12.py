@@ -26,3 +26,5 @@ class C(B,A):
 obj = C()
 print(obj.a)
 
+
+    
