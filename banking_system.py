@@ -71,3 +71,6 @@ class SavingAccount(Account):
     def __init__(self, accountHolder, accountNo, balance, pin, intrestRate):
         self.intrest_rate = intrestRate
         super().__init__(accountHolder, accountNo, balance, pin)
+        
+
+
