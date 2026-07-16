@@ -1,7 +1,5 @@
 import requests
 
-
-
 # online_url = "https://markets.onlinekhabar.com/smtm/home/advance-decline/nepse"
 
 
@@ -30,7 +28,6 @@ import requests
 #         print(i['market_live'])
 # else:
 #     print(f'Error')
-
 
 
 url = "https://www.fotmob.com/api/data/matchDetails?matchId=4653848"
